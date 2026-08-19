@@ -36,6 +36,20 @@ DeepForensics is an end-to-end, scientifically validated deep-learning framework
 - Python 3.10+
 - Node.js 18+ & npm
 - PyTorch 2.0+ (CPU or CUDA)
+- **Git LFS** (Git Large File Storage)
+
+### 📦 Model Weights & Git LFS
+This repository uses [Git LFS](https://git-lfs.github.com/) to manage trained PyTorch model weight checkpoints stored in `model_weights/`:
+- `model_weights/efficientnet_b4/best.pt` (~67.6 MB)
+- `model_weights/convnext_dct/best.pt` (~106.2 MB)
+- `model_weights/noise_model/best.pt` (~42.7 MB)
+
+Before cloning or pulling, ensure Git LFS is installed:
+```bash
+git lfs install
+git clone https://github.com/H-Monisha2007/Deep-Learning-Framework-for-Detecting-AI-Generated-Images-Videos.git
+git lfs pull
+```
 
 ### 2. Environment Setup & Installation
 ```bash
