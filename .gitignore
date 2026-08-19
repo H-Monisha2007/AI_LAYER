@@ -17,16 +17,13 @@ ENV/
 .idea/
 .vscode/
 
-# Datasets & Weights
+# Datasets
 datasets/raw/
 datasets/processed/
 datasets/train/
 datasets/validation/
 datasets/test/
 datasets/unseen_generator_test/
-model_weights/*.pt
-model_weights/*.pth
-model_weights/*.safetensors
 !model_weights/README.md
 
 # Uploads & Temp
