@@ -1,0 +1,105 @@
+{
+  "timestamp": 1787151565.786005,
+  "ablation_experiments": {
+    "RGB baseline": {
+      "accuracy": 0.4545,
+      "balanced_accuracy": 0.5,
+      "precision": 0.4545,
+      "recall": 1.0,
+      "f1_score": 0.625,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "eer": 0.0,
+      "fpr": 1.0,
+      "fnr": 0.0,
+      "brier_score": 0.2466,
+      "ece": 0.0602,
+      "confusion_matrix": {
+        "true_negatives": 0,
+        "false_positives": 6,
+        "false_negatives": 0,
+        "true_positives": 5
+      }
+    },
+    "RGB + frequency": {
+      "accuracy": 0.6364,
+      "balanced_accuracy": 0.65,
+      "precision": 0.5714,
+      "recall": 0.8,
+      "f1_score": 0.6667,
+      "roc_auc": 0.9,
+      "pr_auc": 0.9196,
+      "eer": 0.2,
+      "fpr": 0.5,
+      "fnr": 0.2,
+      "brier_score": 0.1859,
+      "ece": 0.3816,
+      "confusion_matrix": {
+        "true_negatives": 3,
+        "false_positives": 3,
+        "false_negatives": 1,
+        "true_positives": 4
+      }
+    },
+    "RGB + residual": {
+      "accuracy": 0.4545,
+      "balanced_accuracy": 0.5,
+      "precision": 0.4545,
+      "recall": 1.0,
+      "f1_score": 0.625,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "eer": 0.0,
+      "fpr": 1.0,
+      "fnr": 0.0,
+      "brier_score": 0.2506,
+      "ece": 0.0747,
+      "confusion_matrix": {
+        "true_negatives": 0,
+        "false_positives": 6,
+        "false_negatives": 0,
+        "true_positives": 5
+      }
+    },
+    "RGB + patch": {
+      "accuracy": 0.4545,
+      "balanced_accuracy": 0.5,
+      "precision": 0.4545,
+      "recall": 1.0,
+      "f1_score": 0.625,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "eer": 0.0,
+      "fpr": 1.0,
+      "fnr": 0.0,
+      "brier_score": 0.2466,
+      "ece": 0.0602,
+      "confusion_matrix": {
+        "true_negatives": 0,
+        "false_positives": 6,
+        "false_negatives": 0,
+        "true_positives": 5
+      }
+    },
+    "full model": {
+      "accuracy": 0.7273,
+      "balanced_accuracy": 0.75,
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1_score": 0.7692,
+      "roc_auc": 0.9,
+      "pr_auc": 0.9196,
+      "eer": 0.2,
+      "fpr": 0.5,
+      "fnr": 0.0,
+      "brier_score": 0.2016,
+      "ece": 0.2706,
+      "confusion_matrix": {
+        "true_negatives": 3,
+        "false_positives": 3,
+        "false_negatives": 0,
+        "true_positives": 5
+      }
+    }
+  }
+}

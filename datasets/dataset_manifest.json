@@ -1,0 +1,559 @@
+{
+  "summary": {
+    "total_real": 30,
+    "total_ai": 31,
+    "train_real": 18,
+    "train_ai": 10,
+    "val_real": 6,
+    "val_ai": 3,
+    "test_real": 6,
+    "test_ai": 5,
+    "unseen_ai": 13
+  },
+  "splits": {
+    "train": [
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_020.jpg",
+        "filename": "real_photo_020.jpg",
+        "label": "REAL",
+        "phash": "a88287bba7f1581d",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_015.jpg",
+        "filename": "real_photo_015.jpg",
+        "label": "REAL",
+        "phash": "9cb6a2c89fb61c1d",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_011.jpg",
+        "filename": "real_photo_011.jpg",
+        "label": "REAL",
+        "phash": "88b6f3889ab25c1d",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_027.jpg",
+        "filename": "real_photo_027.jpg",
+        "label": "REAL",
+        "phash": "98a2f68d9be70949",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_023.jpg",
+        "filename": "real_photo_023.jpg",
+        "label": "REAL",
+        "phash": "dcb2e3c99fe24d18",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_007.jpg",
+        "filename": "real_photo_007.jpg",
+        "label": "REAL",
+        "phash": "b8c6d2eeb6a54c19",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_006.jpg",
+        "filename": "real_photo_006.jpg",
+        "label": "REAL",
+        "phash": "a886c7ebe2e11d49",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_013.jpg",
+        "filename": "real_photo_013.jpg",
+        "label": "REAL",
+        "phash": "d9b2a3dd9ee30c0d",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_012.jpg",
+        "filename": "real_photo_012.jpg",
+        "label": "REAL",
+        "phash": "cdf7a2c99be2191c",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_016.jpg",
+        "filename": "real_photo_016.jpg",
+        "label": "REAL",
+        "phash": "fd9992a2b74d1c76",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_010.jpg",
+        "filename": "real_photo_010.jpg",
+        "label": "REAL",
+        "phash": "fcc2c7e9e2f04c5e",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_026.jpg",
+        "filename": "real_photo_026.jpg",
+        "label": "REAL",
+        "phash": "ac8687baa2e51d1f",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_030.jpg",
+        "filename": "real_photo_030.jpg",
+        "label": "REAL",
+        "phash": "ccf2a7d9dab20c0d",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_022.jpg",
+        "filename": "real_photo_022.jpg",
+        "label": "REAL",
+        "phash": "89a7a6d8ceb30c5c",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_017.jpg",
+        "filename": "real_photo_017.jpg",
+        "label": "REAL",
+        "phash": "ad9bd6e9b2b4484e",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_028.jpg",
+        "filename": "real_photo_028.jpg",
+        "label": "REAL",
+        "phash": "cdf6e7899ba25858",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_002.jpg",
+        "filename": "real_photo_002.jpg",
+        "label": "REAL",
+        "phash": "fdd787f8f2a14d48",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_014.jpg",
+        "filename": "real_photo_014.jpg",
+        "label": "REAL",
+        "phash": "f9d6d6e2b2b1185e",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_027.jpg",
+        "filename": "ai_gen_sdxl_027.jpg",
+        "label": "AI_GENERATED",
+        "phash": "cce3a7485c3630cd",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_002.jpg",
+        "filename": "ai_gen_sdxl_002.jpg",
+        "label": "AI_GENERATED",
+        "phash": "8cf2f35c49333488",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_011.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_011.jpg",
+        "label": "AI_GENERATED",
+        "phash": "cdf6e60c0c73658c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_021.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_021.jpg",
+        "label": "AI_GENERATED",
+        "phash": "999966e68f194866",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_008.jpg",
+        "filename": "ai_gen_dall_e_3_008.jpg",
+        "label": "AI_GENERATED",
+        "phash": "d8d862e69b191d26",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_036.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_036.jpg",
+        "label": "AI_GENERATED",
+        "phash": "88f7b21c1c73248c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_013.jpg",
+        "filename": "ai_gen_dall_e_3_013.jpg",
+        "label": "AI_GENERATED",
+        "phash": "cca2b30c5d7724cc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_018.jpg",
+        "filename": "ai_gen_dall_e_3_018.jpg",
+        "label": "AI_GENERATED",
+        "phash": "999866e68a195967",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_007.jpg",
+        "filename": "ai_gen_sdxl_007.jpg",
+        "label": "AI_GENERATED",
+        "phash": "999922e6cb191c67",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_038.jpg",
+        "filename": "ai_gen_dall_e_3_038.jpg",
+        "label": "AI_GENERATED",
+        "phash": "ddf7b30d08737488",
+        "width": 512,
+        "height": 512
+      }
+    ],
+    "validation": [
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_019.jpg",
+        "filename": "real_photo_019.jpg",
+        "label": "REAL",
+        "phash": "bcc787fab6a40d0e",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_003.jpg",
+        "filename": "real_photo_003.jpg",
+        "label": "REAL",
+        "phash": "bd9786aab2b5591d",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_018.jpg",
+        "filename": "real_photo_018.jpg",
+        "label": "REAL",
+        "phash": "b89e83e8f2f41d49",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_029.jpg",
+        "filename": "real_photo_029.jpg",
+        "label": "REAL",
+        "phash": "c8b3e789caf24d09",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_005.jpg",
+        "filename": "real_photo_005.jpg",
+        "label": "REAL",
+        "phash": "e98992b6f71c0c76",
+        "width": 640,
+        "height": 480
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_025.jpg",
+        "filename": "real_photo_025.jpg",
+        "label": "REAL",
+        "phash": "89b2e3989ab75c4c",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_028.jpg",
+        "filename": "ai_gen_dall_e_3_028.jpg",
+        "label": "AI_GENERATED",
+        "phash": "8cb6f64c1d6320cc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_031.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_031.jpg",
+        "label": "AI_GENERATED",
+        "phash": "88e3b30c483335cd",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_022.jpg",
+        "filename": "ai_gen_sdxl_022.jpg",
+        "label": "AI_GENERATED",
+        "phash": "ccb3b70c09377588",
+        "width": 512,
+        "height": 512
+      }
+    ],
+    "test": [
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_008.jpg",
+        "filename": "real_photo_008.jpg",
+        "label": "REAL",
+        "phash": "f88783adf7f4580c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_009.jpg",
+        "filename": "real_photo_009.jpg",
+        "label": "REAL",
+        "phash": "88a3e698cff30c58",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_024.jpg",
+        "filename": "real_photo_024.jpg",
+        "label": "REAL",
+        "phash": "ad9382fbf3b8185c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_001.jpg",
+        "filename": "real_photo_001.jpg",
+        "label": "REAL",
+        "phash": "9ca3b7dcdab20c58",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_004.jpg",
+        "filename": "real_photo_004.jpg",
+        "label": "REAL",
+        "phash": "89f2a3c88eb7585c",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_021.jpg",
+        "filename": "real_photo_021.jpg",
+        "label": "REAL",
+        "phash": "fc97d2ffa3a40d0a",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_033.jpg",
+        "filename": "ai_gen_dall_e_3_033.jpg",
+        "label": "AI_GENERATED",
+        "phash": "8ce7b20d487274cc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_037.jpg",
+        "filename": "ai_gen_sdxl_037.jpg",
+        "label": "AI_GENERATED",
+        "phash": "8db2b71c0d3274cc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_003.jpg",
+        "filename": "ai_gen_dall_e_3_003.jpg",
+        "label": "AI_GENERATED",
+        "phash": "d99966e69a191966",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_016.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_016.jpg",
+        "label": "AI_GENERATED",
+        "phash": "88b6b25c0c37358c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_006.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_006.jpg",
+        "label": "AI_GENERATED",
+        "phash": "88f6a30c487334dc",
+        "width": 512,
+        "height": 512
+      }
+    ],
+    "unseen_generator_test": [
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_014.jpg",
+        "filename": "ai_gen_midjourney_v5_014.jpg",
+        "label": "AI_GENERATED",
+        "phash": "9ce3e30c4d37348c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_019.jpg",
+        "filename": "ai_gen_midjourney_v5_019.jpg",
+        "label": "AI_GENERATED",
+        "phash": "989867e68a194d66",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_flux_1_035.jpg",
+        "filename": "ai_gen_flux_1_035.jpg",
+        "label": "AI_GENERATED",
+        "phash": "ccf3a64c4c73348c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_024.jpg",
+        "filename": "ai_gen_midjourney_v5_024.jpg",
+        "label": "AI_GENERATED",
+        "phash": "8db7f30c0963708d",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_029.jpg",
+        "filename": "ai_gen_midjourney_v5_029.jpg",
+        "label": "AI_GENERATED",
+        "phash": "c8f3e20c0d733589",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_flux_1_005.jpg",
+        "filename": "ai_gen_flux_1_005.jpg",
+        "label": "AI_GENERATED",
+        "phash": "9db6f24c4c72748c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_039.jpg",
+        "filename": "ai_gen_midjourney_v5_039.jpg",
+        "label": "AI_GENERATED",
+        "phash": "9cf2b30d0d6364cc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_flux_1_020.jpg",
+        "filename": "ai_gen_flux_1_020.jpg",
+        "label": "AI_GENERATED",
+        "phash": "98b7b20c4d7224dc",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_004.jpg",
+        "filename": "ai_gen_midjourney_v5_004.jpg",
+        "label": "AI_GENERATED",
+        "phash": "d8d966e68a195866",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_flux_1_030.jpg",
+        "filename": "ai_gen_flux_1_030.jpg",
+        "label": "AI_GENERATED",
+        "phash": "88f6f2094d3324c9",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_009.jpg",
+        "filename": "ai_gen_midjourney_v5_009.jpg",
+        "label": "AI_GENERATED",
+        "phash": "999927e6db190926",
+        "width": 768,
+        "height": 768
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_flux_1_010.jpg",
+        "filename": "ai_gen_flux_1_010.jpg",
+        "label": "AI_GENERATED",
+        "phash": "dca6f34c593274c8",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_midjourney_v5_034.jpg",
+        "filename": "ai_gen_midjourney_v5_034.jpg",
+        "label": "AI_GENERATED",
+        "phash": "cdf6e30d4c7234c8",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_008.jpg",
+        "filename": "real_photo_008.jpg",
+        "label": "REAL",
+        "phash": "f88783adf7f4580c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_009.jpg",
+        "filename": "real_photo_009.jpg",
+        "label": "REAL",
+        "phash": "88a3e698cff30c58",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_024.jpg",
+        "filename": "real_photo_024.jpg",
+        "label": "REAL",
+        "phash": "ad9382fbf3b8185c",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_001.jpg",
+        "filename": "real_photo_001.jpg",
+        "label": "REAL",
+        "phash": "9ca3b7dcdab20c58",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_004.jpg",
+        "filename": "real_photo_004.jpg",
+        "label": "REAL",
+        "phash": "89f2a3c88eb7585c",
+        "width": 800,
+        "height": 600
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\real\\real_photo_021.jpg",
+        "filename": "real_photo_021.jpg",
+        "label": "REAL",
+        "phash": "fc97d2ffa3a40d0a",
+        "width": 512,
+        "height": 512
+      }
+    ]
+  }
+}

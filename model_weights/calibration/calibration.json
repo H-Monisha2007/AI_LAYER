@@ -1,0 +1,7 @@
+{
+  "temperature": 1.05,
+  "bias": 0.0,
+  "is_calibrated": true,
+  "training_device": "cpu",
+  "timestamp": 1787151422.7000587
+}

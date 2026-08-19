@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.sqlite3
+*.db
+
+# Environment & IDE
+.env
+.venv/
+venv/
+ENV/
+.idea/
+.vscode/
+
+# Datasets & Weights
+datasets/raw/
+datasets/processed/
+datasets/train/
+datasets/validation/
+datasets/test/
+datasets/unseen_generator_test/
+model_weights/*.pt
+model_weights/*.pth
+model_weights/*.safetensors
+!model_weights/README.md
+
+# Uploads & Temp
+uploads/*
+!uploads/.gitkeep
+temp/
+/tmp/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local

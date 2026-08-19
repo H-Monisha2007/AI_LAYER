@@ -1,0 +1,113 @@
+{
+  "status": "ready",
+  "has_trained_weights": true,
+  "overall_metrics": {
+    "accuracy": 0.7273,
+    "balanced_accuracy": 0.75,
+    "precision": 0.625,
+    "recall": 1.0,
+    "f1_score": 0.7692,
+    "roc_auc": 0.9,
+    "pr_auc": 0.9196,
+    "eer": 0.2,
+    "fpr": 0.5,
+    "fnr": 0.0,
+    "brier_score": 0.2016,
+    "ece": 0.2706,
+    "confusion_matrix": {
+      "true_negatives": 3,
+      "false_positives": 3,
+      "false_negatives": 0,
+      "true_positives": 5
+    }
+  },
+  "per_generator_performance": [
+    {
+      "generator": "real_photos",
+      "count": 6,
+      "accuracy": 0.5,
+      "f1_score": 0.0
+    },
+    {
+      "generator": "dall",
+      "count": 2,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "generator": "sdxl",
+      "count": 1,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    },
+    {
+      "generator": "stable",
+      "count": 2,
+      "accuracy": 1.0,
+      "f1_score": 1.0
+    }
+  ],
+  "unseen_generator_test": {
+    "target_generators": [
+      "Midjourney v5/v6",
+      "FLUX.1"
+    ],
+    "count": 19,
+    "accuracy": 0.8421,
+    "f1_score": 0.8966,
+    "roc_auc": 0.9231,
+    "note": "Evaluates generalization capabilities on unseen generative architectures."
+  },
+  "robustness_benchmarks": {
+    "original": 0.7273,
+    "jpeg_95": 0.4545,
+    "jpeg_80": 0.6364,
+    "jpeg_60": 0.9091,
+    "resize_50": 0.4545,
+    "gaussian_blur": 0.4545,
+    "gaussian_noise": 0.4545
+  },
+  "failure_analysis": {
+    "false_positives_count": 0,
+    "false_negatives_count": 5,
+    "false_positives_samples": [],
+    "false_negatives_samples": [
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_033.jpg",
+        "filename": "ai_gen_dall_e_3_033.jpg",
+        "predicted_p_ai": 0.6738,
+        "error_type": "False Negative",
+        "likely_cause": "AI image mistaken for Real due to smooth spatial details or realistic noise."
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_sdxl_037.jpg",
+        "filename": "ai_gen_sdxl_037.jpg",
+        "predicted_p_ai": 0.6604,
+        "error_type": "False Negative",
+        "likely_cause": "AI image mistaken for Real due to smooth spatial details or realistic noise."
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_dall_e_3_003.jpg",
+        "filename": "ai_gen_dall_e_3_003.jpg",
+        "predicted_p_ai": 0.5058,
+        "error_type": "False Negative",
+        "likely_cause": "AI image mistaken for Real due to smooth spatial details or realistic noise."
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_016.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_016.jpg",
+        "predicted_p_ai": 0.6828,
+        "error_type": "False Negative",
+        "likely_cause": "AI image mistaken for Real due to smooth spatial details or realistic noise."
+      },
+      {
+        "path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\datasets\\raw\\ai\\ai_gen_stable_diffusion_v1_5_006.jpg",
+        "filename": "ai_gen_stable_diffusion_v1_5_006.jpg",
+        "predicted_p_ai": 0.6804,
+        "error_type": "False Negative",
+        "likely_cause": "AI image mistaken for Real due to smooth spatial details or realistic noise."
+      }
+    ]
+  },
+  "timestamp": 1787151468.1741402
+}

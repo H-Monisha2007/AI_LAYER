@@ -1,0 +1,74 @@
+{
+  "device": "cpu",
+  "models": {
+    "rgb_spatial": {
+      "weights_path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\model_weights\\efficientnet_b4\\best.pt",
+      "metrics": {
+        "accuracy": 0.3333,
+        "balanced_accuracy": 0.5,
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "eer": 0.0,
+        "fpr": 1.0,
+        "fnr": 0.0,
+        "brier_score": 0.2517,
+        "ece": 0.1818,
+        "confusion_matrix": {
+          "true_negatives": 0,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "true_positives": 3
+        }
+      }
+    },
+    "frequency_dct": {
+      "weights_path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\model_weights\\convnext_dct\\best.pt",
+      "metrics": {
+        "accuracy": 0.8889,
+        "balanced_accuracy": 0.9167,
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1_score": 0.8571,
+        "roc_auc": 0.9444,
+        "pr_auc": 0.9028,
+        "eer": 0.1667,
+        "fpr": 0.1667,
+        "fnr": 0.0,
+        "brier_score": 0.1716,
+        "ece": 0.4328,
+        "confusion_matrix": {
+          "true_negatives": 5,
+          "false_positives": 1,
+          "false_negatives": 0,
+          "true_positives": 3
+        }
+      }
+    },
+    "noise_residual": {
+      "weights_path": "C:\\Users\\monis\\OneDrive\\Documents\\MYPROJECTS\\DL\\DL1 (3)\\DL1\\model_weights\\noise_model\\best.pt",
+      "metrics": {
+        "accuracy": 0.3333,
+        "balanced_accuracy": 0.5,
+        "precision": 0.3333,
+        "recall": 1.0,
+        "f1_score": 0.5,
+        "roc_auc": 0.7778,
+        "pr_auc": 0.6556,
+        "eer": 0.3333,
+        "fpr": 1.0,
+        "fnr": 0.0,
+        "brier_score": 0.269,
+        "ece": 0.2163,
+        "confusion_matrix": {
+          "true_negatives": 0,
+          "false_positives": 6,
+          "false_negatives": 0,
+          "true_positives": 3
+        }
+      }
+    }
+  }
+}
