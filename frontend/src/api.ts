@@ -237,3 +237,75 @@ export function useLiveHealth() {
     }, [])
     return { health, error }
 }
+
+export interface RiskFactor {
+    category: string
+    severity: string
+    description: string
+    score: number
+}
+
+export interface TrustAuditResponse {
+    id: string
+    detection_id: string
+    dl_prediction: string
+    dl_confidence: number | null
+    trust_decision: string
+    trust_score: number
+    risk_level: string
+    data_quality_score: number
+    ood_risk_score: number
+    model_agreement_score: number
+    explainability_score: number
+    robustness_score: number
+    safety_score: number
+    risk_factors: RiskFactor[]
+    recommendations: string[]
+    audit_summary: string
+    safety_mode: string
+    audited_at: string
+}
+
+export interface TrustAuditHistoryItem {
+    id: string
+    detection_id: string
+    dl_prediction: string
+    dl_confidence: number | null
+    trust_decision: string
+    trust_score: number
+    risk_level: string
+    safety_mode: string
+    audited_at: string
+    original_filename: string | null
+    media_type: string | null
+}
+
+export interface TrustReportResponse {
+    total_audits: number
+    trust_count: number
+    review_count: number
+    unsafe_count: number
+    avg_trust_score: number
+    risk_distribution: Record<string, number>
+    recent_audits: TrustAuditHistoryItem[]
+    safety_modes_used: Record<string, number>
+}
+
+export async function runTrustAudit(detectionId: string, safetyMode: string = 'standard'): Promise<TrustAuditResponse> {
+    const r = await fetch(`${API_BASE_URL}/trust/audit`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ detection_id: detectionId, safety_mode: safetyMode })
+    })
+    return handleResponse<TrustAuditResponse>(r, 'Trust audit failed')
+}
+
+export async function fetchTrustHistory(): Promise<TrustAuditHistoryItem[]> {
+    const r = await fetch(`${API_BASE_URL}/trust/history`)
+    return handleResponse<TrustAuditHistoryItem[]>(r, 'Failed to fetch trust audit history')
+}
+
+export async function fetchTrustReport(): Promise<TrustReportResponse> {
+    const r = await fetch(`${API_BASE_URL}/trust/report`)
+    return handleResponse<TrustReportResponse>(r, 'Failed to fetch trust report')
+}

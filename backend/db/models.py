@@ -179,3 +179,37 @@ class AuditLog(Base):
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
     user = relationship("User", back_populates="audit_logs")
+
+
+class TrustAudit(Base):
+    __tablename__ = "trust_audits"
+
+    id = Column(String, primary_key=True, index=True)
+    detection_id = Column(String, ForeignKey("detections.id"), nullable=False)
+
+    # DL prediction being audited (copied for quick access)
+    dl_prediction = Column(String(50), nullable=False)
+    dl_confidence = Column(Float, nullable=True)
+
+    # TRUST-AI decision
+    trust_decision = Column(String(30), nullable=False)  # TRUST, REVIEW_REQUIRED, UNSAFE_TO_AUTOMATE
+    trust_score = Column(Float, nullable=False)
+    risk_level = Column(String(20), nullable=False)  # LOW, MEDIUM, HIGH, CRITICAL
+
+    # Audit dimension scores
+    data_quality_score = Column(Float, nullable=False)
+    ood_risk_score = Column(Float, nullable=False)
+    model_agreement_score = Column(Float, nullable=False)
+    explainability_score = Column(Float, nullable=False)
+    robustness_score = Column(Float, nullable=False)
+    safety_score = Column(Float, nullable=False)
+
+    # Detailed audit data
+    risk_factors = Column(JSON, nullable=True)
+    recommendations = Column(JSON, nullable=True)
+    audit_summary = Column(Text, nullable=True)
+
+    safety_mode = Column(String(30), default="standard")
+    audited_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+    detection = relationship("Detection", backref="trust_audits")

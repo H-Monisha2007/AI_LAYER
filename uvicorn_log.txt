@@ -1,0 +1,255 @@
+2026-10-03 17:19:01,107 | INFO     | deepforensics | Initialized logging for DeepForensics in development mode
+C:\Users\monis\AppData\Local\Programs\Python\Python310\lib\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_agreement" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+C:\Users\monis\AppData\Local\Programs\Python\Python310\lib\site-packages\pydantic\_internal\_fields.py:160: UserWarning: Field "model_agreement_score" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+INFO:     Started server process [29384]
+INFO:     Waiting for application startup.
+2026-10-03 17:19:11,037 | INFO     | deepforensics | Starting DeepForensics server...
+2026-10-03 17:19:11,039 | INFO     | deepforensics | Initializing database schema...
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | executing <function connect.<locals>.connector at 0x0000014D72DA91B0>
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | operation <function connect.<locals>.connector at 0x0000014D72DA91B0> completed
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True)
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True) completed
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-10-03 17:19:11,040 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-10-03 17:19:11,043 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,043 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA read_uncommitted', [])
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA read_uncommitted', []) completed
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,044 | DEBUG    | aiosqlite | operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,045 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-10-03 17:19:11,045 | INFO     | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-10-03 17:19:11,045 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("users")
+2026-10-03 17:19:11,045 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("users")
+2026-10-03 17:19:11,045 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,045 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,045 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,045 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,045 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("users")', ())
+2026-10-03 17:19:11,045 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("users")', ()) completed
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,048 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("media_files")
+2026-10-03 17:19:11,048 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("media_files")
+2026-10-03 17:19:11,048 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,048 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,048 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("media_files")', ())
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("media_files")', ()) completed
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,050 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("detections")
+2026-10-03 17:19:11,050 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("detections")
+2026-10-03 17:19:11,050 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,050 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,050 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("detections")', ())
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("detections")', ()) completed
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,052 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("model_versions")
+2026-10-03 17:19:11,052 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("model_versions")
+2026-10-03 17:19:11,052 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,052 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,052 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("model_versions")', ())
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("model_versions")', ()) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("model_predictions")
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("model_predictions")
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("model_predictions")', ())
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("model_predictions")', ()) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("video_frames")
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("video_frames")
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("video_frames")', ())
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("video_frames")', ()) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("explanations")
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("explanations")
+2026-10-03 17:19:11,054 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,054 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,054 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,060 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("explanations")', ())
+2026-10-03 17:19:11,060 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("explanations")', ()) completed
+2026-10-03 17:19:11,061 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,061 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,061 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,061 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,061 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("experiments")
+2026-10-03 17:19:11,061 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("experiments")
+2026-10-03 17:19:11,062 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,062 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("experiments")', ())
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("experiments")', ()) completed
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,062 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,064 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("audit_logs")
+2026-10-03 17:19:11,064 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("audit_logs")
+2026-10-03 17:19:11,064 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,064 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("audit_logs")', ())
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("audit_logs")', ()) completed
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,064 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,064 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("trust_audits")
+2026-10-03 17:19:11,064 | INFO     | sqlalchemy.engine.Engine | PRAGMA main.table_info("trust_audits")
+2026-10-03 17:19:11,066 INFO sqlalchemy.engine.Engine [raw sql] ()
+2026-10-03 17:19:11,066 | INFO     | sqlalchemy.engine.Engine | [raw sql] ()
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("trust_audits")', ())
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72DDCD40>, 'PRAGMA main.table_info("trust_audits")', ()) completed
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>)
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72DDCD40>) completed
+2026-10-03 17:19:11,066 INFO sqlalchemy.engine.Engine COMMIT
+2026-10-03 17:19:11,066 | INFO     | sqlalchemy.engine.Engine | COMMIT
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,066 | DEBUG    | aiosqlite | operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,069 | DEBUG    | aiosqlite | executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,069 | DEBUG    | aiosqlite | operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,069 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,069 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,069 | INFO     | deepforensics | Database schema initialized successfully.
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | executing <function connect.<locals>.connector at 0x0000014D72DAB880>
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | operation <function connect.<locals>.connector at 0x0000014D72DAB880> completed
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True)
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True) completed
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-10-03 17:19:11,071 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DEC640>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-10-03 17:19:11,071 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-10-03 17:19:11,071 | INFO     | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-10-03 17:19:11,111 INFO sqlalchemy.engine.Engine SELECT model_versions.id, model_versions.name, model_versions.version, model_versions.domain_type, model_versions.architecture, model_versions.weights_path, model_versions.accuracy, model_versions.roc_auc, model_versions.eer, model_versions.is_active, model_versions.created_at 
+FROM model_versions
+2026-10-03 17:19:11,111 | INFO     | sqlalchemy.engine.Engine | SELECT model_versions.id, model_versions.name, model_versions.version, model_versions.domain_type, model_versions.architecture, model_versions.weights_path, model_versions.accuracy, model_versions.roc_auc, model_versions.eer, model_versions.is_active, model_versions.created_at 
+FROM model_versions
+2026-10-03 17:19:11,111 INFO sqlalchemy.engine.Engine [generated in 0.00046s] ()
+2026-10-03 17:19:11,111 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00046s] ()
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3D440>, 'SELECT model_versions.id, model_versions.name, model_versions.version, model_versions.domain_type, model_versions.architecture, model_versions.weights_path, model_versions.accuracy, model_versions.roc_auc, model_versions.eer, model_versions.is_active, model_versions.created_at \nFROM model_versions', ())
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3D440>, 'SELECT model_versions.id, model_versions.name, model_versions.version, model_versions.domain_type, model_versions.architecture, model_versions.weights_path, model_versions.accuracy, model_versions.roc_auc, model_versions.eer, model_versions.is_active, model_versions.created_at \nFROM model_versions', ()) completed
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72F3D440>)
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000014D72F3D440>) completed
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3D440>)
+2026-10-03 17:19:11,111 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3D440>) completed
+2026-10-03 17:19:11,114 INFO sqlalchemy.engine.Engine ROLLBACK
+2026-10-03 17:19:11,114 | INFO     | sqlalchemy.engine.Engine | ROLLBACK
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DEC640>)
+2026-10-03 17:19:11,114 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DEC640>) completed
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+2026-10-03 17:19:14,725 | INFO     | deepforensics | [DETECTION] Request received for image upload
+2026-10-03 17:19:14,729 | INFO     | deepforensics | Saved image file 57a1828b-904f-4a16-94e9-a4fa043efc15.jpg (8227 bytes, SHA256: 75380402...)
+2026-10-03 17:19:14,729 | INFO     | deepforensics | [DETECTION] File validated & saved: image.jpg
+2026-10-03 17:19:14,729 | INFO     | deepforensics | [DETECTION] Running multi-signal inference pipeline...
+2026-10-03 17:19:17,032 | INFO     | deepforensics | [DETECTION] Inference completed in 2301.49 ms. Decision: AI_GENERATED
+2026-10-03 17:19:17,034 | DEBUG    | aiosqlite | executing <function connect.<locals>.connector at 0x0000014D72FBC820>
+2026-10-03 17:19:17,035 | DEBUG    | aiosqlite | operation <function connect.<locals>.connector at 0x0000014D72FBC820> completed
+2026-10-03 17:19:17,035 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DECA40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True)
+2026-10-03 17:19:17,035 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DECA40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000014D278AFE20>, deterministic=True) completed
+2026-10-03 17:19:17,036 | DEBUG    | aiosqlite | executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DECA40>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-10-03 17:19:17,036 | DEBUG    | aiosqlite | operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000014D72DECA40>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-10-03 17:19:17,036 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2026-10-03 17:19:17,036 | INFO     | sqlalchemy.engine.Engine | BEGIN (implicit)
+2026-10-03 17:19:17,039 INFO sqlalchemy.engine.Engine INSERT INTO media_files (id, filename, original_filename, media_type, mime_type, file_path, file_size_bytes, file_hash_sha256, width, height, duration_seconds, fps, total_frames, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,039 | INFO     | sqlalchemy.engine.Engine | INSERT INTO media_files (id, filename, original_filename, media_type, mime_type, file_path, file_size_bytes, file_hash_sha256, width, height, duration_seconds, fps, total_frames, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,039 INFO sqlalchemy.engine.Engine [generated in 0.00039s] ('57a1828b-904f-4a16-94e9-a4fa043efc15', '57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 'image.jpg', 'image', 'image/jpeg', 'uploads\\images\\57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 8227, '753804027199914ba4f0d9dcf80683ddb588e813de8fd7a91789b2bc42cc3430', None, None, None, None, None, '2026-10-03 11:49:14.729294')
+2026-10-03 17:19:17,039 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00039s] ('57a1828b-904f-4a16-94e9-a4fa043efc15', '57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 'image.jpg', 'image', 'image/jpeg', 'uploads\\images\\57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 8227, '753804027199914ba4f0d9dcf80683ddb588e813de8fd7a91789b2bc42cc3430', None, None, None, None, None, '2026-10-03 11:49:14.729294')
+2026-10-03 17:19:17,039 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,039 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,040 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO media_files (id, filename, original_filename, media_type, mime_type, file_path, file_size_bytes, file_hash_sha256, width, height, duration_seconds, fps, total_frames, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ('57a1828b-904f-4a16-94e9-a4fa043efc15', '57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 'image.jpg', 'image', 'image/jpeg', 'uploads\\images\\57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 8227, '753804027199914ba4f0d9dcf80683ddb588e813de8fd7a91789b2bc42cc3430', None, None, None, None, None, '2026-10-03 11:49:14.729294'))
+2026-10-03 17:19:17,081 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO media_files (id, filename, original_filename, media_type, mime_type, file_path, file_size_bytes, file_hash_sha256, width, height, duration_seconds, fps, total_frames, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ('57a1828b-904f-4a16-94e9-a4fa043efc15', '57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 'image.jpg', 'image', 'image/jpeg', 'uploads\\images\\57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', 8227, '753804027199914ba4f0d9dcf80683ddb588e813de8fd7a91789b2bc42cc3430', None, None, None, None, None, '2026-10-03 11:49:14.729294')) completed
+2026-10-03 17:19:17,082 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>)
+2026-10-03 17:19:17,082 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>) completed
+2026-10-03 17:19:17,084 INFO sqlalchemy.engine.Engine INSERT INTO detections (id, media_file_id, user_id, status, primary_prediction, confidence, is_multidomain_fused, rgb_score, frequency_score, residual_score, face_score, temporal_score, processing_time_ms, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,084 | INFO     | sqlalchemy.engine.Engine | INSERT INTO detections (id, media_file_id, user_id, status, primary_prediction, confidence, is_multidomain_fused, rgb_score, frequency_score, residual_score, face_score, temporal_score, processing_time_ms, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,084 INFO sqlalchemy.engine.Engine [generated in 0.00035s] ('085e2482-b97e-4980-837d-d2fc94c98e85', '57a1828b-904f-4a16-94e9-a4fa043efc15', None, 'completed', 'AI_GENERATED', 0.6822, 1, 0.5054, 0.9989, 0.5495, None, None, 2301.49, '2026-10-03 11:49:17.032467')
+2026-10-03 17:19:17,084 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00035s] ('085e2482-b97e-4980-837d-d2fc94c98e85', '57a1828b-904f-4a16-94e9-a4fa043efc15', None, 'completed', 'AI_GENERATED', 0.6822, 1, 0.5054, 0.9989, 0.5495, None, None, 2301.49, '2026-10-03 11:49:17.032467')
+2026-10-03 17:19:17,084 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,084 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,084 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO detections (id, media_file_id, user_id, status, primary_prediction, confidence, is_multidomain_fused, rgb_score, frequency_score, residual_score, face_score, temporal_score, processing_time_ms, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ('085e2482-b97e-4980-837d-d2fc94c98e85', '57a1828b-904f-4a16-94e9-a4fa043efc15', None, 'completed', 'AI_GENERATED', 0.6822, 1, 0.5054, 0.9989, 0.5495, None, None, 2301.49, '2026-10-03 11:49:17.032467'))
+2026-10-03 17:19:17,085 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO detections (id, media_file_id, user_id, status, primary_prediction, confidence, is_multidomain_fused, rgb_score, frequency_score, residual_score, face_score, temporal_score, processing_time_ms, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ('085e2482-b97e-4980-837d-d2fc94c98e85', '57a1828b-904f-4a16-94e9-a4fa043efc15', None, 'completed', 'AI_GENERATED', 0.6822, 1, 0.5054, 0.9989, 0.5495, None, None, 2301.49, '2026-10-03 11:49:17.032467')) completed
+2026-10-03 17:19:17,085 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>)
+2026-10-03 17:19:17,085 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>) completed
+2026-10-03 17:19:17,087 INFO sqlalchemy.engine.Engine INSERT INTO explanations (id, detection_id, method, gradcam_heatmap_path, frequency_spectrum_path, residual_noise_path, explanation_summary, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,087 | INFO     | sqlalchemy.engine.Engine | INSERT INTO explanations (id, detection_id, method, gradcam_heatmap_path, frequency_spectrum_path, residual_noise_path, explanation_summary, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,087 INFO sqlalchemy.engine.Engine [generated in 0.00025s] ('b7854178-b9e1-4beb-9271-d45bb1569fe2', '085e2482-b97e-4980-837d-d2fc94c98e85', 'Grad-CAM', 'uploads\\images\\gradcam_57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', None, None, 'Visual saliency map highlighting key spatial image regions influencing model inference.', '2026-10-03 11:49:17.032975')
+2026-10-03 17:19:17,087 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00025s] ('b7854178-b9e1-4beb-9271-d45bb1569fe2', '085e2482-b97e-4980-837d-d2fc94c98e85', 'Grad-CAM', 'uploads\\images\\gradcam_57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', None, None, 'Visual saliency map highlighting key spatial image regions influencing model inference.', '2026-10-03 11:49:17.032975')
+2026-10-03 17:19:17,087 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,087 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,087 | DEBUG    | aiosqlite | executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO explanations (id, detection_id, method, gradcam_heatmap_path, frequency_spectrum_path, residual_noise_path, explanation_summary, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ('b7854178-b9e1-4beb-9271-d45bb1569fe2', '085e2482-b97e-4980-837d-d2fc94c98e85', 'Grad-CAM', 'uploads\\images\\gradcam_57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', None, None, 'Visual saliency map highlighting key spatial image regions influencing model inference.', '2026-10-03 11:49:17.032975'))
+2026-10-03 17:19:17,088 | DEBUG    | aiosqlite | operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO explanations (id, detection_id, method, gradcam_heatmap_path, frequency_spectrum_path, residual_noise_path, explanation_summary, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ('b7854178-b9e1-4beb-9271-d45bb1569fe2', '085e2482-b97e-4980-837d-d2fc94c98e85', 'Grad-CAM', 'uploads\\images\\gradcam_57a1828b-904f-4a16-94e9-a4fa043efc15.jpg', None, None, 'Visual saliency map highlighting key spatial image regions influencing model inference.', '2026-10-03 11:49:17.032975')) completed
+2026-10-03 17:19:17,088 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>)
+2026-10-03 17:19:17,088 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>) completed
+2026-10-03 17:19:17,090 INFO sqlalchemy.engine.Engine INSERT INTO model_predictions (id, detection_id, model_version_id, prediction, confidence, raw_scores, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,090 | INFO     | sqlalchemy.engine.Engine | INSERT INTO model_predictions (id, detection_id, model_version_id, prediction, confidence, raw_scores, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)
+2026-10-03 17:19:17,090 INFO sqlalchemy.engine.Engine [generated in 0.00038s] [('2b1b9686-c62c-4687-9409-5c16841a6b73', '085e2482-b97e-4980-837d-d2fc94c98e85', 'effnet-b4-rgb', 'AI_GENERATED', 0.5054, '{"ai_probability": 0.5054}', '2026-10-03 11:49:17.032975'), ('67596f5c-ab9c-4c35-b7d5-2f363daefe0d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'convnext-dct-freq', 'AI_GENERATED', 0.9989, '{"ai_probability": 0.9989}', '2026-10-03 11:49:17.032975'), ('5dff0c6f-2cd4-471f-bf52-e42340f42cb8', '085e2482-b97e-4980-837d-d2fc94c98e85', 'srm-noise-residual', 'AI_GENERATED', 0.5495, '{"ai_probability": 0.5495}', '2026-10-03 11:49:17.032975'), ('581dcfa9-c1da-4ed0-a803-24050201d39d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'opencv-face-detector', 'AI_GENERATED', None, '{"status": "not_applicable", "ai_probability": null}', '2026-10-03 11:49:17.032975')]
+2026-10-03 17:19:17,090 | INFO     | sqlalchemy.engine.Engine | [generated in 0.00038s] [('2b1b9686-c62c-4687-9409-5c16841a6b73', '085e2482-b97e-4980-837d-d2fc94c98e85', 'effnet-b4-rgb', 'AI_GENERATED', 0.5054, '{"ai_probability": 0.5054}', '2026-10-03 11:49:17.032975'), ('67596f5c-ab9c-4c35-b7d5-2f363daefe0d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'convnext-dct-freq', 'AI_GENERATED', 0.9989, '{"ai_probability": 0.9989}', '2026-10-03 11:49:17.032975'), ('5dff0c6f-2cd4-471f-bf52-e42340f42cb8', '085e2482-b97e-4980-837d-d2fc94c98e85', 'srm-noise-residual', 'AI_GENERATED', 0.5495, '{"ai_probability": 0.5495}', '2026-10-03 11:49:17.032975'), ('581dcfa9-c1da-4ed0-a803-24050201d39d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'opencv-face-detector', 'AI_GENERATED', None, '{"status": "not_applicable", "ai_probability": null}', '2026-10-03 11:49:17.032975')]
+2026-10-03 17:19:17,090 | DEBUG    | aiosqlite | executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,090 | DEBUG    | aiosqlite | operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,091 | DEBUG    | aiosqlite | executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO model_predictions (id, detection_id, model_version_id, prediction, confidence, raw_scores, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)', [('2b1b9686-c62c-4687-9409-5c16841a6b73', '085e2482-b97e-4980-837d-d2fc94c98e85', 'effnet-b4-rgb', 'AI_GENERATED', 0.5054, '{"ai_probability": 0.5054}', '2026-10-03 11:49:17.032975'), ('67596f5c-ab9c-4c35-b7d5-2f363daefe0d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'convnext-dct-freq', 'AI_GENERATED', 0.9989, '{"ai_probability": 0.9989}', '2026-10-03 11:49:17.032975'), ('5dff0c6f-2cd4-471f-bf52-e42340f42cb8', '085e2482-b97e-4980-837d-d2fc94c98e85', 'srm-noise-residual', 'AI_GENERATED', 0.5495, '{"ai_probability": 0.5495}', '2026-10-03 11:49:17.032975'), ('581dcfa9-c1da-4ed0-a803-24050201d39d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'opencv-face-detector', 'AI_GENERATED', None, '{"status": "not_applicable", "ai_probability": null}', '2026-10-03 11:49:17.032975')])
+2026-10-03 17:19:17,091 | DEBUG    | aiosqlite | operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x0000014D72F3EE40>, 'INSERT INTO model_predictions (id, detection_id, model_version_id, prediction, confidence, raw_scores, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)', [('2b1b9686-c62c-4687-9409-5c16841a6b73', '085e2482-b97e-4980-837d-d2fc94c98e85', 'effnet-b4-rgb', 'AI_GENERATED', 0.5054, '{"ai_probability": 0.5054}', '2026-10-03 11:49:17.032975'), ('67596f5c-ab9c-4c35-b7d5-2f363daefe0d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'convnext-dct-freq', 'AI_GENERATED', 0.9989, '{"ai_probability": 0.9989}', '2026-10-03 11:49:17.032975'), ('5dff0c6f-2cd4-471f-bf52-e42340f42cb8', '085e2482-b97e-4980-837d-d2fc94c98e85', 'srm-noise-residual', 'AI_GENERATED', 0.5495, '{"ai_probability": 0.5495}', '2026-10-03 11:49:17.032975'), ('581dcfa9-c1da-4ed0-a803-24050201d39d', '085e2482-b97e-4980-837d-d2fc94c98e85', 'opencv-face-detector', 'AI_GENERATED', None, '{"status": "not_applicable", "ai_probability": null}', '2026-10-03 11:49:17.032975')]) completed
+2026-10-03 17:19:17,092 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>)
+2026-10-03 17:19:17,092 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014D72F3EE40>) completed
+2026-10-03 17:19:17,093 INFO sqlalchemy.engine.Engine COMMIT
+2026-10-03 17:19:17,093 | INFO     | sqlalchemy.engine.Engine | COMMIT
+2026-10-03 17:19:17,093 | DEBUG    | aiosqlite | executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,102 | DEBUG    | aiosqlite | operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,102 | DEBUG    | aiosqlite | executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,102 | DEBUG    | aiosqlite | operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,103 | DEBUG    | aiosqlite | executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DECA40>)
+2026-10-03 17:19:17,103 | DEBUG    | aiosqlite | operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014D72DECA40>) completed
+2026-10-03 17:19:17,103 | INFO     | deepforensics | [DETECTION] Detection record successfully committed to database
+INFO:     127.0.0.1:57242 - "POST /api/detect/image HTTP/1.1" 200 OK

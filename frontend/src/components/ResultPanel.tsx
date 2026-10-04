@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { DetectionSummary, VerdictWarning } from '../api'
+import { DetectionSummary, VerdictWarning, TrustAuditResponse, runTrustAudit } from '../api'
 
 const GLOSSARY: Record<string, string> = {
     'AI-Generation Score': 'Estimates how strongly the forensic models favor AI-generated imagery based on the available evidence.',
@@ -158,6 +158,24 @@ export function ResultPanel({ result }: Props) {
 
     const relInfo = reliabilityLabel(reliability)
     const oodInfo = oodLabel(oodStatus)
+
+    const [auditLoading, setAuditLoading] = useState(false)
+    const [auditResult, setAuditResult] = useState<TrustAuditResponse | null>(null)
+    const [auditError, setAuditError] = useState<string | null>(null)
+
+    const doAudit = async (mode: string) => {
+        if (!result || !result.id) return
+        setAuditLoading(true)
+        setAuditError(null)
+        try {
+            const audit = await runTrustAudit(result.id, mode)
+            setAuditResult(audit)
+        } catch (e: any) {
+            setAuditError(e.message || 'Audit failed')
+        } finally {
+            setAuditLoading(false)
+        }
+    }
 
     return (
         <div className="result-panel">
@@ -347,6 +365,107 @@ export function ResultPanel({ result }: Props) {
                     </div>
                 ))}
             </div>
+
+            {/* ═══════ TRUST-AI AUDIT LAYER ═══════ */}
+            <div style={{ marginTop: '40px', paddingTop: '40px', borderTop: '2px solid var(--border-subtle)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
+                    <div>
+                        <h3 style={{ fontSize: '1.4rem', fontWeight: 800, margin: 0, color: 'var(--text-primary)', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            🛡️ TRUST-AI Audit
+                        </h3>
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                            Independently evaluate if this prediction is safe to automate.
+                        </div>
+                    </div>
+                    {!auditResult && !auditLoading && (
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                            <button className="btn btn-secondary" onClick={() => doAudit('standard')}>Standard Audit</button>
+                            <button className="btn btn-primary" onClick={() => doAudit('safety_critical')} style={{ background: '#ef4444', color: '#fff' }}>Safety-Critical Audit</button>
+                        </div>
+                    )}
+                </div>
+
+                {auditLoading && (
+                    <div className="card" style={{ textAlign: 'center', padding: '40px 24px' }}>
+                        <div className="spinner" />
+                        <div style={{ marginTop: 16, color: 'var(--text-secondary)' }}>Auditing DL Prediction...</div>
+                        <div style={{ marginTop: 8, color: 'var(--text-muted)', fontSize: '0.8rem' }}>Checking Data Quality, OOD Risk, and Explainability</div>
+                    </div>
+                )}
+
+                {auditError && (
+                    <div className="card" style={{ borderColor: 'var(--accent-red)', color: 'var(--accent-red)' }}>
+                        ⚠️ {auditError}
+                    </div>
+                )}
+
+                {auditResult && !auditLoading && (
+                    <div style={{ background: auditResult.trust_decision === 'TRUST' ? 'rgba(34, 197, 94, 0.1)' : auditResult.trust_decision === 'REVIEW_REQUIRED' ? 'rgba(245, 158, 11, 0.1)' : 'rgba(239, 68, 68, 0.1)', border: `2px solid ${auditResult.trust_decision === 'TRUST' ? '#22c55e' : auditResult.trust_decision === 'REVIEW_REQUIRED' ? '#f59e0b' : '#ef4444'}`, borderRadius: 12, padding: '24px' }}>
+
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                            <div>
+                                <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 700 }}>FINAL DECISION</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 900, color: auditResult.trust_decision === 'TRUST' ? '#22c55e' : auditResult.trust_decision === 'REVIEW_REQUIRED' ? '#f59e0b' : '#ef4444', marginTop: '4px' }}>
+                                    {auditResult.trust_decision.replace(/_/g, ' ')}
+                                </div>
+                                <div style={{ fontSize: '0.9rem', color: 'var(--text-primary)', marginTop: '8px' }}>
+                                    Trust Score: <strong>{(auditResult.trust_score * 100).toFixed(1)}%</strong> | Risk Level: <strong>{auditResult.risk_level}</strong>
+                                </div>
+                            </div>
+                            <div style={{ background: 'var(--bg-primary)', padding: '12px 16px', borderRadius: '8px', border: '1px solid var(--border-subtle)', maxWidth: '400px' }}>
+                                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '4px', textTransform: 'uppercase', fontWeight: 700 }}>Audit Summary</div>
+                                <div style={{ fontSize: '0.85rem', color: 'var(--text-primary)', lineHeight: 1.5 }}>
+                                    {auditResult.audit_summary}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{ marginTop: '24px', display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px' }}>
+                            <MetricPill label="Data Qlty" value={`${Math.round(auditResult.data_quality_score * 100)}%`} color={auditResult.data_quality_score > 0.7 ? '#22c55e' : auditResult.data_quality_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                            <MetricPill label="OOD Risk" value={`${Math.round(auditResult.ood_risk_score * 100)}%`} color={auditResult.ood_risk_score > 0.7 ? '#22c55e' : auditResult.ood_risk_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                            <MetricPill label="Agreement" value={`${Math.round(auditResult.model_agreement_score * 100)}%`} color={auditResult.model_agreement_score > 0.7 ? '#22c55e' : auditResult.model_agreement_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                            <MetricPill label="Explain" value={`${Math.round(auditResult.explainability_score * 100)}%`} color={auditResult.explainability_score > 0.7 ? '#22c55e' : auditResult.explainability_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                            <MetricPill label="Robust" value={`${Math.round(auditResult.robustness_score * 100)}%`} color={auditResult.robustness_score > 0.7 ? '#22c55e' : auditResult.robustness_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                            <MetricPill label="Safety" value={`${Math.round(auditResult.safety_score * 100)}%`} color={auditResult.safety_score > 0.7 ? '#22c55e' : auditResult.safety_score > 0.4 ? '#f59e0b' : '#ef4444'} />
+                        </div>
+
+                        {auditResult.risk_factors.length > 0 && (
+                            <div style={{ marginTop: '24px' }}>
+                                <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '12px' }}>Identified Risk Factors</div>
+                                <div style={{ display: 'grid', gap: '8px' }}>
+                                    {auditResult.risk_factors.map((rf, idx) => (
+                                        <div key={idx} style={{ background: 'var(--bg-primary)', padding: '10px 14px', borderRadius: '6px', borderLeft: `4px solid ${rf.severity === 'critical' ? '#dc2626' : rf.severity === 'high' ? '#ef4444' : rf.severity === 'medium' ? '#f59e0b' : '#eab308'}`, display: 'flex', gap: '12px', alignItems: 'center' }}>
+                                            <div style={{ fontSize: '0.75rem', fontWeight: 700, padding: '2px 6px', borderRadius: '4px', background: 'var(--bg-tertiary)', color: 'var(--text-primary)', minWidth: '80px', textAlign: 'center', textTransform: 'uppercase' }}>
+                                                {rf.severity}
+                                            </div>
+                                            <div>
+                                                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{rf.category}</div>
+                                                <div style={{ fontSize: '0.85rem', color: 'var(--text-primary)' }}>{rf.description}</div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+
+                        {auditResult.recommendations.length > 0 && (
+                            <div style={{ marginTop: '24px' }}>
+                                <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '12px' }}>Recommendations</div>
+                                <ul style={{ margin: 0, paddingLeft: '20px', color: 'var(--text-primary)', fontSize: '0.85rem', lineHeight: 1.6 }}>
+                                    {auditResult.recommendations.map((rec, idx) => (
+                                        <li key={idx}>{rec}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        <div style={{ marginTop: '24px', textAlign: 'right' }}>
+                            <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)' }}>Audit ID: {auditResult.id} • Mode: {auditResult.safety_mode}</div>
+                        </div>
+                    </div>
+                )}
+            </div>
+
         </div>
     )
 }

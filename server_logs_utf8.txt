@@ -1,0 +1,56 @@
+2026-10-03 17:14:25,858 | INFO     | deepforensics | Initialized logging for DeepForensics in development mode
+python : C:\Users\monis\Ap
+pData\Local\Programs\Pytho
+n\Python310\lib\site-packa
+ges\pydantic\_internal\_fi
+elds.py:160: UserWarning: 
+Field "model_agreement" 
+has conflict with 
+protected namespace 
+"model_".
+At line:1 char:1
++ python -m backend.main 
+> server_logs.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Users\monis\...spac   
+ e "model_".:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+You may be able to 
+resolve this warning by 
+setting `model_config['pro
+tected_namespaces'] = ()`.
+  warnings.warn(
+C:\Users\monis\AppData\Loc
+al\Programs\Python\Python3
+10\lib\site-packages\pydan
+tic\_internal\_fields.py:1
+60: UserWarning: Field 
+"model_agreement_score" 
+has conflict with 
+protected namespace 
+"model_".
+
+You may be able to 
+resolve this warning by 
+setting `model_config['pro
+tected_namespaces'] = ()`.
+  warnings.warn(
+INFO:     Will watch for 
+changes in these 
+directories: ['C:\\Users\\
+monis\\OneDrive\\Documents
+\\MYPROJECTS\\DL\\dl1\\pro
+ject']
+ERROR:    [WinError 
+10013] An attempt was 
+made to access a socket 
+in a way forbidden by its 
+access permissions
