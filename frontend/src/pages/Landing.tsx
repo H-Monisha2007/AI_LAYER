@@ -21,7 +21,7 @@ export function Landing() {
             </h1>
 
             <p className="hero-sub">
-                DeepForensics is a multidomain deep learning framework combining spatial, frequency,
+                Trust-AI is a multidomain deep learning framework combining spatial, frequency,
                 residual, face, and temporal analysis models to expose synthetic media with explainable,
                 calibrated confidence scores.
             </p>

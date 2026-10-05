@@ -1,3 +1,3 @@
 """
-DeepForensics Core Package
+Trust-AI Core Package
 """

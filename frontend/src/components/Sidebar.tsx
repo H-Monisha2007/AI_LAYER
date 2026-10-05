@@ -21,7 +21,7 @@ export function Sidebar() {
                 <div className="logo-mark">
                     <div className="logo-icon">🔬</div>
                     <div>
-                        <div className="logo-text">DeepForensics</div>
+                        <div className="logo-text">Trust-AI</div>
                         <div className="logo-sub">AI Media Analysis</div>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ def setup_logging():
             logging.StreamHandler(sys.stdout)
         ]
     )
-    logger = logging.getLogger("deepforensics")
+    logger = logging.getLogger("trust_ai")
     logger.info(f"Initialized logging for {settings.APP_NAME} in {settings.APP_ENV} mode")
     return logger
 

@@ -3,7 +3,7 @@ export function Methodology() {
         {
             emoji: '🔬',
             title: 'Detection Philosophy',
-            body: `DeepForensics does not rely on any single model or heuristic. 
+            body: `Trust-AI does not rely on any single model or heuristic. 
 Instead, it uses a multidomain fusion strategy where independent models 
 analyze complementary signal domains — RGB spatial, frequency spectrum, 
 noise residual, face forgery, and temporal consistency — and their outputs 

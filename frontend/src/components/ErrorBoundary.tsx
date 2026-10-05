@@ -56,10 +56,10 @@ export class ErrorBoundary extends Component<Props, State> {
                     }}>
                         <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔬</div>
                         <h1 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.75rem', color: '#f87171' }}>
-                            DeepForensics Application Error
+                            Trust-AI Application Error
                         </h1>
                         <p style={{ color: '#9ca3af', fontSize: '0.9rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
-                            DeepForensics encountered an unexpected UI rendering error. You can try refreshing the page or reloading the application.
+                            Trust-AI encountered an unexpected UI rendering error. You can try refreshing the page or reloading the application.
                         </p>
 
                         <button

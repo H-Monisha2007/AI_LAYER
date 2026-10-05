@@ -1,8 +1,8 @@
-# DeepForensics — Multidomain AI-Generated Image & Video Detection System
+# Trust-AI — Multidomain AI-Generated Image & Video Detection System
 
-DeepForensics is an end-to-end, scientifically validated deep-learning framework for detecting synthetic, AI-generated, and manipulated media (deepfakes, diffusion artifacts, face swaps, synthetic generation).
+Trust-AI is an end-to-end, scientifically validated deep-learning framework for detecting synthetic, AI-generated, and manipulated media (deepfakes, diffusion artifacts, face swaps, synthetic generation).
 
-> **Scientific Honesty Guarantee**: DeepForensics strictly enforces true model inference. When trained checkpoints are unavailable, the system reports `MODEL_NOT_READY` with `UNCERTAIN` classification. No simulated, random, or hardcoded scores are ever generated.
+> **Scientific Honesty Guarantee**: Trust-AI strictly enforces true model inference. When trained checkpoints are unavailable, the system reports `MODEL_NOT_READY` with `UNCERTAIN` classification. No simulated, random, or hardcoded scores are ever generated.
 
 ---
 

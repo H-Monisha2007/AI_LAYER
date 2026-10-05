@@ -1,4 +1,4 @@
-# DeepForensics React Frontend Dockerfile
+# Trust-AI React Frontend Dockerfile
 FROM node:20-alpine AS build
 
 WORKDIR /app

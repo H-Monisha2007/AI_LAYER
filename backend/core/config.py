@@ -7,14 +7,14 @@ from pydantic_settings import BaseSettings
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 class Settings(BaseSettings):
-    APP_NAME: str = "DeepForensics"
+    APP_NAME: str = "Trust-AI"
     APP_ENV: str = "development"
     DEBUG: bool = True
     API_PREFIX: str = "/api"
     PORT: int = 8000
     HOST: str = "0.0.0.0"
 
-    SECRET_KEY: str = "deepforensics_secret_key_super_secure_change_in_production"
+    SECRET_KEY: str = "trustai_secret_key_super_secure_change_in_production"
     ALLOWED_ORIGINS: str = "http://localhost:5173,http://localhost:5174,http://localhost:5175,http://localhost:3000,http://127.0.0.1:5173,http://127.0.0.1:5174,http://127.0.0.1:5175"
 
     # Database

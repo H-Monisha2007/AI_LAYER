@@ -1,3 +1,3 @@
 """
-DeepForensics Backend API Package
+Trust-AI Backend API Package
 """

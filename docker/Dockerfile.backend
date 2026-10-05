@@ -1,4 +1,4 @@
-# DeepForensics FastAPI Backend Dockerfile
+# Trust-AI FastAPI Backend Dockerfile
 FROM python:3.10-slim
 
 WORKDIR /app

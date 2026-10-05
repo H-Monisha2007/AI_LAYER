@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
 
-const API_BASE_URL = '/api'
+// In production (Render), VITE_API_URL must point to the backend's full URL
+// e.g. "https://your-backend-name.onrender.com/api"
+// In local dev, the Vite proxy handles '/api' → localhost:8000 automatically
+const API_BASE_URL = (import.meta.env.VITE_API_URL as string) || '/api'
 
 export interface HealthData {
     status: string

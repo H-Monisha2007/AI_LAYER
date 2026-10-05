@@ -6,6 +6,6 @@ async def test_health_endpoint(async_client):
     assert response.status_code == 200
     data = response.json()
     assert data["status"] in ["ok", "degraded"]
-    assert data["app_name"] == "DeepForensics"
+    assert data["app_name"] == "Trust-AI"
     assert "database_connected" in data
     assert "cuda_available" in data
