@@ -10,12 +10,30 @@ from backend.db.models import MediaFile, Detection, ModelPrediction, VideoFrame,
 from backend.services.storage import storage_manager
 from backend.core.logging import logger
 
-from ml.models.efficientnet_rgb import EfficientNetRGBModel
-from ml.models.convnext_frequency import ConvNeXtFrequencyModel
-from ml.models.srm_residual import SRMResidualModel
-from inference.image.pipeline import ImageInferencePipeline, InferenceNotReadyError
-from inference.video.pipeline import VideoInferencePipeline
+# ML dependencies are optional.
+# The API can start even when PyTorch/model weights are unavailable.
+try:
+    from ml.models.efficientnet_rgb import EfficientNetRGBModel
+    from ml.models.convnext_frequency import ConvNeXtFrequencyModel
+    from ml.models.srm_residual import SRMResidualModel
+    from inference.image.pipeline import ImageInferencePipeline, InferenceNotReadyError
+    from inference.video.pipeline import VideoInferencePipeline
 
+    ML_AVAILABLE = True
+    ML_IMPORT_ERROR = None
+
+except (ImportError, ModuleNotFoundError) as e:
+    EfficientNetRGBModel = None
+    ConvNeXtFrequencyModel = None
+    SRMResidualModel = None
+    ImageInferencePipeline = None
+    VideoInferencePipeline = None
+
+    class InferenceNotReadyError(Exception):
+        pass
+
+    ML_AVAILABLE = False
+    ML_IMPORT_ERROR = str(e)
 router = APIRouter()
 
 WEIGHTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "model_weights"))
