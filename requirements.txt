@@ -35,3 +35,7 @@ pandas==2.2.2
 
 # MLflow
 mlflow==2.13.2
+
+
+torch==2.3.1
+torchvision==0.18.1
